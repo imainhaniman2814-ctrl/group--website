@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo" style="text-decoration: none;">🐾 MeowLicious</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="adopt.html">Shop</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="about us.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div style="padding:50px 10%;">
+    <h2 style="text-align:center;">Checkout 🐾</h2>
+
+    <!-- Order Summary -->
+    <h3>Order Summary</h3>
+    <table border="1" style="width:100%; text-align:center;">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price (RM)</th>
+          <th>Quantity</th>
+          <th>Total (RM)</th>
+        </tr>
+      </thead>
+      <tbody id="orderSummary"></tbody>
+    </table>
+    <h3 id="grandTotal" style="text-align:right; margin-top:20px;"></h3>
+
+    <!-- Checkout Form -->
+    <form style="max-width:500px; margin:auto; margin-top:30px;">
+      <label>Name:</label><br>
+      <input type="text" style="width:100%; margin-bottom:15px;"><br>
+
+      <label>Adress:</label><br>
+      <textarea style="width:100%; margin-bottom:15px;"></textarea><br>
+
+      <label>Phone Number:</label><br>
+      <input type="text" style="width:100%; margin-bottom:15px;"><br>
+
+      <label>Payment Method:</label><br>
+      <select style="width:100%; margin-bottom:15px;">
+        <option>Online Banking</option>
+        <option>Cash on Delivery</option>
+      </select><br>
+
+      <button type="submit" class="btn-primary">Confirm Order</button>
+    </form>
+  </div>
+
+  <script>
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let summaryList = document.getElementById('orderSummary');
+    let grandTotal = 0;
+
+    if(cart.length === 0){
+      summaryList.innerHTML = "<tr><td colspan='4'>No items in cart.</td></tr>";
+    } else {
+      cart.forEach(item => {
+        let total = item.price * item.quantity;
+        grandTotal += total;
+        let row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${item.name}</td>
+          <td>${item.price.toFixed(2)}</td>
+          <td>${item.quantity}</td>
+          <td>${total.toFixed(2)}</td>
+        `;
+        summaryList.appendChild(row);
+      });
+    }
+
+    document.getElementById('grandTotal').innerText = "Grand Total: RM " + grandTotal.toFixed(2);
+  </script>
+
+  <script>
+document.querySelector("form").addEventListener("submit", function(e){
+  e.preventDefault(); // stop default submit
+
+  let paymentMethod = document.querySelector("select").value;
+
+  if(paymentMethod === "Online Banking"){
+    // contoh redirect ke Maybank2u (boleh tukar ke gateway sebenar)
+    window.location.href = "https://www.maybank2u.com.my";
+  } else if(paymentMethod === "Cash on Delivery"){
+    alert("Order confirmed! 🐾 We will deliver to your address.");
+    localStorage.removeItem("cart"); // clear cart lepas confirm
+  }
+});
+</script>
+
+
+</body>
+</html>
