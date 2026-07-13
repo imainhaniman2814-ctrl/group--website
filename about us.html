@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - MeowLicious</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin:0;
+      padding:0;
+      background:#f9f9f9;
+    }
+    /* Gaya Umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+body {
+    background-color: #AEC6CF;
+    color: #4a3f35;
+}
+
+/* Navigasi Utama */
+header {
+    background-color: #1E3A5F;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d97443; /* Warna oren kucing */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #635147;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #d97443;
+}
+
+.btn-primary {
+    background-color: #d97443;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #b85c32;
+}
+    section {
+      max-width:1000px;
+      margin:auto;
+      padding:60px 20px;
+    }
+    h2 {
+      text-align:center;
+      font-size:2.5em;
+      margin-bottom:20px;
+      color:#333;
+    }
+    p {
+      color:#555;
+      line-height:1.6;
+      font-size:1.1em;
+    }
+    .cards {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-around;
+      margin-top:40px;
+    }
+    .card {
+      flex:1;
+      min-width:250px;
+      margin:20px;
+      background:#fff;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    }
+    .team {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      margin-top:30px;
+    }
+    .member {
+      margin:15px;
+      text-align:center;
+    }
+    .member img {
+      width:200px;
+      height:200px;
+      border-radius:50%;
+      object-fit:cover;
+    }
+
+   /* Footer styling */
+footer {
+  background-color: #0b2a4a;   /* Dark blue background */
+  color: white;                /* Default text putih */
+  padding: 20px;
+  text-align: center;          /* Semua teks duduk tengah */
+}
+
+footer h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+footer p {
+  margin: 5px 0;               /* Jarak kecil antara setiap baris */
+  font-size: 14px;
+}
+
+/* Override khas untuk pastikan putih */
+footer p, footer h3 {
+  color: white !important;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+        <a href="index.html" class="logo" style="text-decoration: none;">🐾 MeowLicious</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adopt.html">Shop</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about us.html" class="active">About Us</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="btn-primary">Contact Us</a>
+    </header>
+
+  <section>
+    <h2>About Us</h2>
+    <p style="text-align:center; margin-top:50px;">
+      MeowLicious was founded in 2017 with a heartfelt vision: to ensure that every cat receives the nutrition they truly deserve. The inspiration came from witnessing many cats being fed without proper and balanced meals. Out of compassion for these pets, we decided to provide a brand that offers premium and nutritious cat food, helping owners care for their furry companions in the best way possible. From humble beginnings, I, together with two dedicated teammates, embarked on this journey through trial and error, learning and growing along the way. What started as a small initiative has now flourished into a trusted name among cat lovers. Today, MeowLicious proudly operates four branches alongside our headquarters in Shah Alam: Sungai Petani, Kedah (our very first branch). Muadzam, Pahang. Seremban, Negeri Sembilan. Johor Bahru, Johor. Each branch represents a milestone in our growth, driven by passion, perseverance, and the belief that every paw deserves healthy bites.With the tagline “Healthy bites, happier paws”, MeowLicious continues to expand, guided by our mission to provide cat owners across Malaysia with products that combine quality, care, and love.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3 style="text-align:center;">Our Vision</h3>
+        <br>
+        <p style="text-align:center;">To be the leading and most trusted brand in Malaysia that provides premium, nutritious, and innovative cat products, ensuring every cat enjoys a healthier and happier life while strengthening the bond between pets and their owners.</p>
+      </div>
+      <div class="card">
+        <h3 style="text-align:center;">Our Mission</h3>
+        <br>
+        <p style="text-align:center;">Provide an innovative, safe, and affordable premium cat products that ensure every feline receives complete nutrition and care. We are committed to supporting cat owners with trusted solutions, fostering healthier and happier lives for their pets, while continuously growing through passion, teamwork, and dedication.</p>
+      </div>
+    </div>
+
+    <h3 style="text-align:center; margin-top:50px;">Meet Our Team</h3>
+    <div class="team">
+      <div class="member">
+        <img src="akims.jpeg" alt="Akiem">
+        <p><strong>Iman Hakim</strong></p>
+        <p>Founder</p>
+      </div>
+      <div class="member">
+        <img src="iky.jpeg" alt="Teammate">
+        <p><strong>Rezky Ikhwan</strong></p>
+        <p>Co-Founder</p>
+      </div>
+       <div class="member">
+        <img src="weeda.jpeg" alt="Teammate">
+        <p><strong>Waheeda Sakina</strong></p>
+        <p>Co-Founder</p>
+      </div>
+      <div class="member">
+        <img src="workers.png" alt="Akiem">
+        <p><strong>Workers</strong></p>
+        <p>Family of 40 employees at MeowLicious</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <h3>About Us</h3>
+      <p>MeowLicious Sdn. Bhd. was founded on 2026.
+         We provide a selection of premium food, accessories, and daily necessities to keep your cat happy and healthy.</p>
+    </div>
+    <div>
+      <p>📍 Shah Alam, Selangor</p>
+      <p>✉️ info@meowlicious.com</p>
+      <p>📞 +6017-585 1579</p>
+      <p>© 2026 MeowLicious Sdn. Bhd. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+<style>
+        /* Sifat scroll bagi website jadi smooth/lancar */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Ini sekadar teks panjang untuk bagi page ada scrollbar */
+        .content {
+            padding: 20px;
+            height: 2000px; 
+            background: linear-gradient(to bottom, #f3f4f6, #2563eb);
+        }
+
+        /* --- STYLE UNTUK BUTTON BACK TO TOP --- */
+        #btnBackToTop {
+            display: none;          /* Ghaibkan button pada mulanya */
+            position: fixed;        /* Gantungkan button atas skrin */
+            bottom: 20px;           /* Jarak 20px dari bawah */
+            right: 30px;            /* Jarak 30px dari kanan */
+            z-index: 99;            /* Pastikan button sentiasa di lapisan paling atas */
+            border: none;           
+            outline: none;          
+            background-color: #22c55e; /* Warna hijau (boleh tukar ikut tema) */
+            color: white;           
+            cursor: pointer;        
+            padding: 15px 20px;     
+            border-radius: 50px;    /* Buat bentuk bulat/oval */
+            font-size: 18px;        
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.3); /* Kesan bayang */
+            transition: background-color 0.3s;
+        }
+
+        /* Kesan bila mouse lalu atas button */
+        #btnBackToTop:hover {
+            background-color: #16a34a; /* Hijau gelap sikit */
+        }
+    </style>
+</head>
+
+    <style>
+        /* Memastikan skrin scroll dengan lancar */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* --- STYLE BUTTON BACK TO TOP PASTEL --- */
+        #btnBackToTop {
+            display: none;            /* Sorok pada permulaan */
+            position: fixed;          /* Sentiasa terapung di skrin */
+            bottom: 30px;             /* Jarak dari bawah */
+            right: 30px;              /* Jarak dari kanan */
+            z-index: 99;              /* Berada di lapisan paling atas */
+            
+            /* Sizing & Shape */
+            width: 50px;              /* Lebar button seragam */
+            height: 50px;             /* Tinggi button seragam */
+            border-radius: 50%;       /* Jadikan bentuk bulat sempurna */
+            border: none;             /* Buang border hitam standard */
+            
+            /* GUNA SALAH SATU WARNA PASTEL DI BAWAH: */
+            background-color: #FFD1DC; /* 1. Pastel Pink (Latar Belakang) */
+            /* background-color: #E8F0E6; */ /* 2. Pastel Sage Green (Buka ulasan jika nak guna) */
+            /* background-color: #E6E6FA; */ /* 3. Pastel Lavender (Buka ulasan jika nak guna) */
+            
+            cursor: pointer;          
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08); /* Bayang yang sangat soft */
+            
+            /* Center-kan ikon SVG di dalam button */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            transition: all 0.3s ease; /* Efek transition yang smooth */
+        }
+
+        /* Efek hover (bila mouse lalu atas button) */
+        #btnBackToTop:hover {
+            transform: translateY(-5px); /* Button akan naik sikit ke atas */
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.12); /* Bayang jadi tebal sikit */
+            background-color: #FCAEBB; /* Warna pink pekat sikit masa hover */
+        }
+
+        /* --- BAHAGIAN INI DIUBAH UNTUK BESARKAN ARROW --- */
+        #btnBackToTop svg {
+            stroke: #7DAAA5; /* Warna hijau/turquoise pastel */
+            width: 30px;     /* Diubah dari 24px ke 30px */
+            height: 30px;    /* Diubah dari 24px ke 30px */
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="topFunction()" id="btnBackToTop" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+        </svg>
+    </button>
+
+    <script>
+        let mybutton = document.getElementById("btnBackToTop");
+
+        window.onscroll = function() { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                mybutton.style.display = "flex"; /* Guna 'flex' supaya ikon kekal di tengah */
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+</html>
+</body>
+</html>
